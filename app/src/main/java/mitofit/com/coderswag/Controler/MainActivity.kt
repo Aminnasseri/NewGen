@@ -1,7 +1,8 @@
-package mitofit.com.coderswag
+package mitofit.com.coderswag.Controler
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import mitofit.com.coderswag.R
 
 class MainActivity : AppCompatActivity() {
 

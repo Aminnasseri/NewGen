@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!--        <item name="android:forceDarkAllowed">true</item>-->
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_in</item>
+
+
+    </style>
+
+
+
+</resources>

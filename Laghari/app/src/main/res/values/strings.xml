@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Laghari</string>
+    <string name="todo">TODO</string>
+    <string name="email">Email</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight</string>
+    <string name="height_cm">Height/CM</string>
+    <string name="start">Start</string>
+    <string name="titleBmi">BMI</string>
+    <string name="textBmi" translatable="false">25.2</string>
+    <string name="textGoalWeigh" translatable="false">72</string>
+    <string name="titleWeight">Weight</string>
+    <string name="title_goal_weight">Goal Weight</string>
+    <string name="title_height">Height</string>
+    <string name="titleage">Age</string>
+    <string name="textWeight" translatable="false">92.2KG</string>
+    <string name="textHeight" translatable="false">180 CM</string>
+    <string name="text_age" translatable="false">18</string>
+    <string name="title_name">Name</string>
+    <string name="text_name">Amin Nasseri</string>
+    <string name="title_bmr">BMR</string>
+    <string name="text_bmr" translatable="false">1990</string>
+    <string name="title_current_image">current</string>
+    <string name="title_goal_image">Goal</string>
+</resources>

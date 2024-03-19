@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtFullName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/email"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="#E0E0E0"
+        app:counterEnabled="false"
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#797979"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:startIconDrawable="@drawable/user_3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:nextFocusDown="@drawable/height2"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtDateOfBirth"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/age"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#E0E0E0"
+        app:endIconMode="custom"
+        app:hintTextColor="#797979"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtFullName"
+        app:startIconDrawable="@drawable/calendar2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="@android:integer/config_longAnimTime"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890 "
+            android:maxLines="1"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmailAddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/weight"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#E0E0E0"
+        app:counterMaxLength="90"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#797979"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDateOfBirth"
+        app:startIconDrawable="@drawable/weight2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="90"
+            android:maxLines="1"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890 "
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtHeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/height_cm"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#E0E0E0"
+        app:counterEnabled="false"
+        app:counterMaxLength="90"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#797979"
+        app:layout_constraintBottom_toBottomOf="@+id/edtEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/edtEmailAddress"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/height2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="90"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890 "
+            android:maxLines="1"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="159dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_register"
+        android:contentDescription="TODO" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00A6FB"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/start"
+        android:textStyle="bold"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtHeight" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:popupElevation="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtDateOfBirth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edtFullName" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:srcCompat="@drawable/footer" />
+
+    <ProgressBar
+        android:id="@+id/progressBarM"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F9F9F9</color>
+    <color name="colorPrimaryDark">#Ebebeb</color>
+    <color name="colorAccent">#12AF52</color>
+    <color name="titleColor">#06371A</color>
+    <color name="ErrorColor">#EBB96C</color>
+    <color name="ErrorColor1">#FCCC13</color>
+    <color name="buttonback">#577A7A7A</color>
+    <color name="buttonDeActive">#51817373</color>
+    <color name="currect_qr">#39E60055</color>
+    <color name="rec_col">#4497AF</color>
+    <color name="pos_in_rec_col">#D7253D</color>
+    <color name="neg_col">#43AF69</color>
+</resources>

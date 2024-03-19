@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "962646907142",
+    "firebase_url": "https://amin-ml.firebaseio.com",
+    "project_id": "amin-ml",
+    "storage_bucket": "amin-ml.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962646907142:android:bf3e73493e14fde43ee687",
+        "android_client_info": {
+          "package_name": "com.google.firebase.ml.md"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962646907142-v2mpdd6orr25hdjfu89dln3sov4bsaok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsU-zaRPjAsHkSNfm8mbKDMM_lDF10L_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962646907142-v2mpdd6orr25hdjfu89dln3sov4bsaok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962646907142:android:1808b1ab35bb07543ee687",
+        "android_client_info": {
+          "package_name": "smartherd.com.amix1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962646907142-v2mpdd6orr25hdjfu89dln3sov4bsaok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsU-zaRPjAsHkSNfm8mbKDMM_lDF10L_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962646907142-v2mpdd6orr25hdjfu89dln3sov4bsaok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

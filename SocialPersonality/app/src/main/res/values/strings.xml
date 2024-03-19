@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Social Personality</string>
+    <string name="facebook_app_id">3082632408660049</string>
+    <string name="fb_login_protocol_scheme">fb3082632408660049</string>
+
+
+</resources>

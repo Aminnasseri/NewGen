@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">VAXDIAX</string>
+    <string name="covid_19_test">COVID-19 Test</string>
+    <string name="btn_test_history">See Test History</string>
+    <string name="btn_start_covid_19_test">Start VAXDIAX</string>
+    <string name="welcome_to_rapid_test">Welcome to Rapid Lab</string>
+    <string name="for_starting_the_test_please_select_the_below_button">Please select one of the buttons:</string>
+    <string name="please_open_the_kit_box_and_get_test_plate_and_needle">Please Open the Test Plate Pack and get Test Plate and needle</string>
+    <string name="step_1">Step 1</string>
+    <string name="open_the_kit_box">Lay out all items for test procedure and open Test Cassette pack.</string>
+    <string name="next_step">Next Step</string>
+    <string name="full_name">Full Name</string>
+    <string name="country">Country</string>
+    <string name="email_address">Email Address</string>
+    <string name="city">City</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="step_2">Step 2</string>
+    <string name="scan_the_qr_code">Scan QR code on test cassette.</string>
+    <string name="please_scan_the_qr_code_on_test_plate">Please scan the QR code on Test plate</string>
+    <string name="qr_code_is_not_a_valid_code">Qr Code is not a valid code...</string>
+    <string name="try_again">Try Again</string>
+    <string name="i_did_it">I did it</string>
+    <string name="step_5">Step 5</string>
+    <string name="wash_your_hand">Wash your hand</string>
+    <string name="carefully_take_blood_sample">carefully take blood sample</string>
+    <string name="stepper_blood">TODO</string>
+    <string name="step_6">Step 6</string>
+    <string name="take_blood">Follow the instructions below to take a blood sample.</string>
+    <string name="scan_the_test_plate">Scan entire test plate and press send button to receive test result.</string>
+    <string name="please_scan_the_test_plate_in_the_red_box">Please take a photo of the test plate in the red box</string>
+    <string name="step_8">Step 8</string>
+    <string name="done">Done</string>
+    <string name="step_3">Step 3</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="company_code">Company Code</string>
+    <string name="please_fill_in_the_fields_below">Please fill in the fields below</string>
+    <string name="wait_for_5_minutes">Wait 10 minutes until color lines appear.</string>
+    <string name="step_7">Step 7</string>
+    <string name="wait_5_minutes_untill_four_colour_strips_appears">Device vibrates when timer has ended.</string>
+    <string name="todo">TODO</string>
+    <string name="edittext_hint_history"><font size="14">Test Number</font></string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zibfit">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.zibfit.Game8Activity"
+            android:noHistory="true">
+
+        </activity>
+        <activity android:name="com.zibfit.Cure3Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Game7Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Question6Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Love3Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Game6Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Virus3Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Question5Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Game5Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Cure2Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Game4Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.Love2Activity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.zibfit.Question4Activity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.zibfit.Virus2Activity"
+            android:noHistory="true"  />
+        <activity
+            android:name="com.zibfit.Game3Activity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.zibfit.Question3Activity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.zibfit.Cure1Activity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.zibfit.Game2Activity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.zibfit.Question2Activity"
+            android:noHistory="true"/>
+        <activity android:name="com.zibfit.GuideActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.zibfit.FinishGameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.zibfit.Game1Activity"
+            android:noHistory="true"
+           />
+        <activity
+            android:name="com.zibfit.Virus1Activy"
+            android:noHistory="true"
+            />
+        <activity
+            android:name="com.zibfit.ExerciseQuestion1Activity"
+            android:noHistory="true"
+         />
+        <activity
+            android:name="com.zibfit.TruthQuestion1Activity"
+            android:noHistory="true"
+       />
+        <activity
+            android:name="com.zibfit.LoveQusetion1Activity"
+            android:noHistory="true"
+            />
+        <activity
+            android:name="com.zibfit.DareQuestion1Activity"
+            android:noHistory="true"
+        />
+        <activity
+            android:name="com.zibfit.Question1Activity"
+            android:noHistory="true"
+         />
+        <activity
+            android:name="com.zibfit.SelectPlayerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            tools:ignore="LockedOrientationActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.zibfit.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "980887489935",
+    "firebase_url": "https://chalab.firebaseio.com",
+    "project_id": "chalab",
+    "storage_bucket": "chalab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980887489935:android:49aa603d2df2ce1bc8cffa",
+        "android_client_info": {
+          "package_name": "com.zibfit.chalab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980887489935-hnrpb6jcuf39tjhs2e7pssmiqkbrp8cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRaj-ErWRDfqd1Gnu5DO-jDuXb-iTEpmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980887489935-hnrpb6jcuf39tjhs2e7pssmiqkbrp8cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

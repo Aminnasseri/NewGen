@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WatingFiveActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/waitingFiveLottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/activeTimeLeftFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/device_loading_f" />
+
+    <TextView
+        android:id="@+id/activeTimeLeftFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_compact_rounded_bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNexWatingFive"
+        app:layout_constraintEnd_toEndOf="@+id/btnNexWatingFive"
+        app:layout_constraintStart_toStartOf="@+id/btnNexWatingFive"
+        tools:text="00:00" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sf_compact_rounded_bold"
+        android:text="@string/wait_for_5_minutes"
+        android:textColor="@color/titleColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_compact_rounded_light"
+        android:text="Step 4"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sf_compact_rounded_regular"
+        android:text="@string/wait_5_minutes_untill_four_colour_strips_appears"
+        android:textColor="#2A2A2A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <include
+        android:id="@+id/toolbarWaitingFive"
+        layout="@layout/toolbar_open_kit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarWaitingFive"
+        app:srcCompat="@drawable/stepper_simple_waiting"
+        android:contentDescription="@string/todo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNexWatingFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:enabled="false"
+        android:fontFamily="@font/sf_compact_rounded_bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/next_step"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:cornerRadius="22dp"
+        app:iconPadding="10dp"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <View
+        android:id="@+id/doneImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#DAFFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/activeTimeLeftFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imgShowTik"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/waitingFiveLottie"
+        app:layout_constraintEnd_toEndOf="@+id/waitingFiveLottie"
+        app:layout_constraintStart_toStartOf="@+id/waitingFiveLottie"
+        app:layout_constraintTop_toTopOf="@+id/waitingFiveLottie"
+        app:srcCompat="@drawable/succes_qr" />
+
+    <TextView
+        android:id="@+id/txtUndertik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sf_compact_rounded_bold"
+        android:text="Done"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imgShowTik"
+        app:layout_constraintStart_toStartOf="@+id/imgShowTik"
+        app:layout_constraintTop_toBottomOf="@+id/imgShowTik" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

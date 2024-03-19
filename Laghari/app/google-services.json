@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "307224076671",
+    "firebase_url": "https://laghary-b6bef.firebaseio.com",
+    "project_id": "laghary-b6bef",
+    "storage_bucket": "laghary-b6bef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307224076671:android:da76ea9294c085ade47a4a",
+        "android_client_info": {
+          "package_name": "com.ml.laghari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307224076671-2ud07r4lsi3t4kope10bd5tn2oog30bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgQJ5NUnSw8guIGiyfHuTddEuU-SRIUSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307224076671-2ud07r4lsi3t4kope10bd5tn2oog30bf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

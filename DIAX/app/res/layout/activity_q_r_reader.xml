@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".QRReaderActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarQr"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnQrNext"
+        app:layout_constraintStart_toStartOf="@+id/btnQrNext"
+        app:layout_constraintTop_toBottomOf="@+id/btnQrNext" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnQrNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:enabled="false"
+        android:fontFamily="@font/sf_compact_rounded_bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/next_step"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:cornerRadius="22dp"
+        app:iconPadding="10dp"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_compact_rounded_light"
+        android:text="@string/step_2"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sf_compact_rounded_bold"
+        android:text="@string/scan_the_qr_code"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStep2" />
+
+
+    <include
+        android:id="@+id/toolbarOpenKit"
+        layout="@layout/toolbar_open_kit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarOpenKit"
+        app:srcCompat="@drawable/stepper_simple_qr" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="true"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="1"
+            app:frameColor="#D81B60"
+            app:frameCornersRadius="10dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="0.75"
+            app:frameThickness="2dp"
+            app:maskColor="#77000000">
+
+        </com.budiyev.android.codescanner.CodeScannerView>
+
+        <View
+            android:id="@+id/view_wrong_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#85101010"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtQrError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sf_compact_display_medium"
+        android:text="@string/qr_code_is_not_a_valid_code"
+        android:textColor="@color/ErrorColor"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/errorImageQr"
+        app:layout_constraintStart_toStartOf="@+id/errorImageQr"
+        app:layout_constraintTop_toBottomOf="@+id/errorImageQr" />
+
+    <ImageView
+        android:id="@+id/errorImageQr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="110dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:srcCompat="@drawable/error" />
+
+    <TextView
+        android:id="@+id/txtQrResultQrPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sf_compact_rounded_bold"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTryAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQrError" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#1D171616"
+        android:fontFamily="@font/sf_compact_rounded_medium"
+        android:text="@string/try_again"
+        android:textColor="@color/ErrorColor"
+        android:visibility="invisible"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtQrError"
+        app:layout_constraintStart_toStartOf="@+id/txtQrError"
+        app:layout_constraintTop_toBottomOf="@+id/txtQrError"
+        app:strokeColor="@color/ErrorColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

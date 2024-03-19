@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GplusTest</string>
+    <string name="facebook_app_id">839856916673976</string>
+    <string name="fb_login_protocol_scheme">fb839856916673976</string>
+</resources>

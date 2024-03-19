@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInformationActivity">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iphone_12_pro_copy_3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageInfo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:elevation="2dp"
+        android:src="@drawable/_email_image"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnsSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#1E88E5"
+        android:enabled="true"
+        android:fontFamily="@font/sf_bold"
+        android:text="Sing Up"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <ProgressBar
+        android:id="@+id/progressbarPersonalInfo"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:progressTint="#039BE5"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfo" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupSex" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sf_bold"
+        android:text="Enter Your Information"
+        android:textColor="#191818"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageInfo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <RadioButton
+            android:id="@+id/rdFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#D81B60"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#3949AB"
+            android:text="Male" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/btnEditImage"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImageInfo"
+        app:layout_constraintStart_toStartOf="@+id/profileImageInfo"
+        app:layout_constraintTop_toTopOf="@+id/profileImageInfo"
+        app:srcCompat="@drawable/edit_pic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">لاغری</string>
+    <string name="todo">TODO</string>
+    <string name="email">ایمیل</string>
+    <string name="age">سن</string>
+    <string name="weight">وزن/کیلوگرم</string>
+    <string name="height_cm">قد/سانتیمتر</string>
+    <string name="start">شروع</string>
+    <string name="titleBmi">BMI</string>
+    <string name="titleWeight">وزن</string>
+    <string name="title_goal_weight">وزن هدف</string>
+    <string name="title_height">قد</string>
+    <string name="titleage">سن</string>
+    <string name="title_name">نام</string>
+    <string name="text_name">Amin Nasseri</string>
+    <string name="title_bmr">BMR</string>
+    <string name="title_current_image">وزن فعلی</string>
+    <string name="title_goal_image">هدف</string>
+</resources>

@@ -75,7 +75,7 @@ fun Greeting(modifier: Modifier = Modifier) {
             Text(
                 text = "Hello!",
                 fontSize = 24.sp,
-                modifier = modifier.align(alignment = Alignment.CenterHorizontally)
+                modifier = modifier.align(alignment = Alignment.CenterHorizontally).align(Alignment.CenterHorizontally)
             )
             LazyA()
             RowA()
